@@ -1,0 +1,7 @@
+{
+  "name": "geocache",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
