@@ -7,14 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Página Index do projeto</ion-title>
+    <ion-title>Página Index do projeto </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+<button ion-button (click)="abrirModalCadastro()">Cadastrar um novo item</button>
 
 <ion-card>
     <h1>Geolocalização 1</h1>
@@ -28,14 +28,13 @@
     </ion-card-content>
 </ion-card>
 
-<ion-card>
-    <h1>Geolocalização 1</h1>
+<ion-card *ngFor="let geocache of servico.geocaches">
     <ion-card-content>
       <ion-card-title>
-        Latitude: 22.3425553 Longitude: 19.222341
+        Latitude: {{geocache.latitude}} Longitude: {{geocache.longitude}}
       </ion-card-title>
       <p>
-        Proximo da prefeitura de betim, caixa vermelha
+        {{geocache.descricao}}
       </p>
     </ion-card-content>
 </ion-card>

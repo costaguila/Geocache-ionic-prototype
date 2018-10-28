@@ -1,0 +1,21 @@
+<div style="padding: 5vh 5vw; margin: 3 vh 3 vw; background-color: white;">
+  <button ion-button icon-only (click)="fecharModal();" >
+    <ion-icon name="close"></ion-icon>
+  </button>
+  <h1>Cadastro de geochaches</h1>
+    <form #form="ngForm" (ngSubmit)="registarGeochache(form)">
+      <ion-item>
+        <ion-label>Todo</ion-label>
+        <ion-input type="text" [(ngModel)]="latlog[0]" name="latitude"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Todo</ion-label>
+        <ion-input type="text" [(ngModel)]="latlog[1]" name="longitude"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Description</ion-label>
+        <ion-textarea [(ngModel)]="descricao" name="description"></ion-textarea>
+      </ion-item>
+      <button ion-button type="submit" block>Adicionar geocache</button>
+    </form> 
+</div>

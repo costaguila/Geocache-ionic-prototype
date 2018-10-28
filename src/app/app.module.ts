@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { IndexPage } from '../pages/index/index';
+import { IndexPage,CadastroModal } from '../pages/index/index';
 import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -20,6 +20,7 @@ import { GeocacheServiceProvider } from '../providers/geocache-service/geocache-
     MyApp,
     IndexPage,
     AboutPage,
+    CadastroModal,
     TabsPage
   ],
   imports: [
@@ -32,6 +33,7 @@ import { GeocacheServiceProvider } from '../providers/geocache-service/geocache-
     MyApp,
     IndexPage,
     AboutPage,
+    CadastroModal,
     TabsPage
   ],
   providers: [
